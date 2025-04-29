@@ -58,13 +58,15 @@ const App = () => {
       <h2 className="form-step-title">Step {step}</h2>
       <form onSubmit={(e) => e.preventDefault()}>
         <div
-          className={`step-container ${slideClass}`}
-          style={{
-            width: `${formWidth}px`,
-            transform: `translateX(-${(step - 1) * (formWidth / 3)}px)`,
-            transition: "transform 0.3s ease-in-out",
-          }}
-        >
+      
+       className="step-container"
+       style={{
+         width: `${formWidth}px`,
+         transform: `translateX(-${(step - 1) * (formWidth / 3)}px)`,
+         transition: "transform 0.5s ease-in-out",
+       }}
+     >
+     
           <div
             className="step1 step"
             style={{ width: `${inputDivWidth}px` }}
